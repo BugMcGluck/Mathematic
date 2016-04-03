@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="maxim.grischenko.mathematic.MainActivity"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvFirstNumber"
+        android:textSize="150sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvAction"
+        android:textSize="150sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvFirstNumber"
+        android:layout_toEndOf="@+id/tvFirstNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvSecondNumber"
+        android:textSize="150sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvAction"
+        android:layout_toEndOf="@+id/tvAction" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="="
+        android:id="@+id/tvIs"
+        android:textSize="150sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvSecondNumber"
+        android:layout_toEndOf="@+id/tvSecondNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvAnswer1"
+        android:textSize="100sp"
+        android:layout_toEndOf="@id/tvIs"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvIs"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvAnswer2"
+        android:textSize="100sp"
+        android:layout_alignParentTop="false"
+        android:layout_toEndOf="@id/tvIs"
+        android:layout_toRightOf="@+id/tvIs"
+        android:layout_below="@+id/tvAnswer1"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvAnswer3"
+        android:textSize="100sp"
+        android:layout_toRightOf="@+id/tvIs"
+        android:layout_toEndOf="@+id/tvIs"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/tvAnswer2"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/tvAnswer4"
+        android:textSize="100sp"
+        android:layout_toRightOf="@+id/tvIs"
+        android:layout_toEndOf="@id/tvIs"
+        android:layout_below="@+id/tvAnswer3"
+        android:clickable="true" />
+</RelativeLayout>
